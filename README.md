@@ -2,13 +2,13 @@
 
 This is a proof of concept of a python web appplication packaged as a single binary file.
 
-The python application is defined in `server.py`, it logs incoming http requests on port 80.
+The python application is defined in `server.py`, it logs incoming http requests on port 5000.
 
 ## Building
 
 ```bash
-cp ./python server.com
-./zip server.com server.py
+cp ./python app.com
+./zip app.com server.py .args
 ```
 
 Or if you are really lazy
@@ -19,4 +19,6 @@ make
 
 ## Running
 
-Copy `server.com` anywhere and run `./server.com /zip/server.py`
+Copy `app.com` anywhere and run `./app.com`
+
+Open `localhost:5000` and see it working
